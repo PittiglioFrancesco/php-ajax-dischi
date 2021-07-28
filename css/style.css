@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #2D3B46;
+}
+
+.logo{
+    width: 5%;
+    margin: 5px 10px;
+}
+
+/* main */
+
+main{
+    background-color: #1E2E3B;
+}
+
+.card{
+    background-color: #2D3B46;
+    margin: 50px 0;
+}
+
+.img-disco{
+    width: 200px;
+}
