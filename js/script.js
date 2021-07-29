@@ -2,7 +2,7 @@ const app = new Vue(
     {
         el: '#app',
         data:{
-            url: '../php-json/api/dischi.php'
+            url: '../php-json/database.php'
         },
         mounted(){
             axios
