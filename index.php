@@ -20,22 +20,20 @@
 
     <main>
         <div class="row justify-content-center" id="app">
-            <?php foreach ($dischi as $disco) { ?>    
-                <div class="col-3">
-       
-                    <div class="card">
-                        
-                        <img class="disco-img" src="<?php echo $disco['poster']; ?>" alt="IMG Album">    
-                        <h2 class="text-uppercase text-center"><?php echo $disco['title']; ?></h2>
-                        <span class="text-center"><?php echo $disco['author']; ?></span>
-                        <span class="text-center"><?php echo $disco['year']; ?></span>    
-
-                    </div>
                 
+            <div class="col-3" v-for="disco in dischi">
+    
+                <div class="card">
+                    
+                    <img class="disco-img" :src="disco.poster" :alt="disco.title">    
+                    <h2 class="text-uppercase text-center"> {{disco.title}} </h2>
+                    <span class="text-center"> {{disco.author}} </span>
+                    <span class="text-center"> {{disco.year}} </span>    
 
                 </div>
-            <?php } ?>
+            
 
+            </div>
 
         </div>
     </main>
